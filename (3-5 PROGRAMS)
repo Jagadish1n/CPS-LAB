@@ -1,0 +1,178 @@
+3.Create a program that blinks the LED on the development board using MBED software
+3.1 Code:
+void setup()
+{
+pinMode(13, OUTPUT);
+}
+void loop()
+{
+  digitalWrite(13, HIGH);
+  delay(1000); // Wait for 1000 millisecond(s)
+  digitalWrite(13, LOW);
+  delay(1000); // Wait for 1000 millisecond(s)
+}
+3.2.Through Button  blink LED
+ void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(13,OUTPUT);
+}
+void loop()
+{
+  if(digitalRead(2)==1)
+  {
+    digitalWrite(13,HIGH);
+  }
+  else
+  {
+    digitalWrite(13,LOW);
+  }
+}
+3.3. Led with digital counter
+ 
+CODE:
+int pin2=2;
+int pin3=3;
+int pin4=4;
+int pin5=5;
+int stime=500;
+void setup()
+{
+  pinMode(pin2,OUTPUT);
+  pinMode(pin3,OUTPUT);
+  pinMode(pin4,OUTPUT);
+  pinMode(pin5,OUTPUT);
+}
+void loop()
+{
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,LOW);
+  digitalWrite(pin4,LOW);
+  digitalWrite(pin5,LOW);
+  delay(stime);
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,LOW);
+  digitalWrite(pin4,LOW);
+  digitalWrite(pin5,HIGH);
+  delay(stime);  
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,LOW);
+  digitalWrite(pin4,HIGH);
+  digitalWrite(pin5,LOW);
+  delay(stime);
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,LOW);
+  digitalWrite(pin4,HIGH);
+  digitalWrite(pin5,HIGH);
+  delay(stime);
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,HIGH);
+  digitalWrite(pin4,LOW);
+  digitalWrite(pin5,LOW);
+  delay(stime);
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,HIGH);
+  digitalWrite(pin4,LOW);
+  digitalWrite(pin5,HIGH);
+  delay(stime);     
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,HIGH);
+  digitalWrite(pin4,HIGH);
+  digitalWrite(pin5,LOW);
+  delay(stime);
+  digitalWrite(pin2,LOW);
+  digitalWrite(pin3,HIGH);
+  digitalWrite(pin4,HIGH);
+  digitalWrite(pin5,HIGH);
+  delay(stime);
+  digitalWrite(pin2,HIGH);
+  digitalWrite(pin3,LOW);
+  digitalWrite(pin4,LOW);
+  digitalWrite(pin5,LOW);
+  delay(stime);
+  digitalWrite(pin2,HIGH);
+  digitalWrite(pin3,LOW);
+  digitalWrite(pin4,LOW);
+  digitalWrite(pin5,HIGH);
+  delay(stime);  
+  digitalWrite(pin2,HIGH);
+  digitalWrite(pin3,LOW);
+  digitalWrite(pin4,HIGH);
+  digitalWrite(pin5,LOW);
+  delay(stime);
+  digitalWrite(pin2,HIGH);
+  digitalWrite(pin3,LOW);
+  digitalWrite(pin4,HIGH);
+  digitalWrite(pin5,HIGH);
+  delay(stime);
+  digitalWrite(pin2,HIGH);
+  digitalWrite(pin3,HIGH);
+  digitalWrite(pin4,LOW);
+  digitalWrite(pin5,LOW);
+  delay(stime);  
+  digitalWrite(pin2,HIGH);
+  digitalWrite(pin3,HIGH);
+  digitalWrite(pin4,LOW);
+  digitalWrite(pin5,HIGH);
+  delay(stime);
+  digitalWrite(pin2,HIGH);
+  digitalWrite(pin3,HIGH);
+  digitalWrite(pin4,HIGH);
+  digitalWrite(pin5,LOW);
+  delay(stime);
+  digitalWrite(pin2,HIGH);
+  digitalWrite(pin3,HIGH);
+  digitalWrite(pin4,HIGH);
+  digitalWrite(pin5,HIGH);
+  delay(stime);
+}
+4. Pick one-one from the available sensors and actuators and find or create code that will display the sensed data on the pc
+A) Analog potentiometer 
+Code :
+Int pot=A0;
+Void setup()
+{
+Serial.begin(9600);
+}
+Void loop()
+{
+  Int potvalue=analogRead(pot);
+  Serial.print(“pot value”);
+  Serial.println(potvalue);
+  Delay(1);
+}
+B) Reading sensor
+Code :
+Void setup()
+{
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+}
+Void loop()
+{
+   Int lightvalue=analogRead(A0);
+   Serial.println(lightvalue);
+    Delay(1000);
+}
+5.Create a program that displays data from the sensor in regular intervals in a compact format.
+CODE: 
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(13, OUTPUT);
+  pinMode(9, OUTPUT);
+}
+void loop()
+{
+  if (digitalRead(2) >= HIGH) {
+    digitalWrite(13, HIGH);
+    tone(9, 523, 1000); // play tone 60 (C5 = 523 Hz)
+  } else {
+    digitalWrite(13, LOW);
+    noTone(9);
+  }
+  delay(1); // Wait for 1 millisecond(s)
+}
+
+
+
