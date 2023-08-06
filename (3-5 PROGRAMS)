@@ -29,7 +29,6 @@ void loop()
   }
 }
 3.3. Led with digital counter
- 
 CODE:
 int pin2=2;
 int pin3=3;
@@ -145,16 +144,17 @@ void loop()
 }
 B) Reading sensor
 Code :
-Void setup()
+void setup()
 {
   pinMode(A0, INPUT);
   Serial.begin(9600);
 }
-Void loop()
+
+void loop()
 {
-   Int lightvalue=analogRead(A0);
-   Serial.println(lightvalue);
-    delay(1000);
+  int lightValue = analogRead(A0);
+  Serial.println(lightValue);
+  delay(1000);
 }
 5.Create a program that displays data from the sensor in regular intervals in a compact format.
 CODE: 
@@ -164,6 +164,7 @@ void setup()
   pinMode(13, OUTPUT);
   pinMode(9, OUTPUT);
 }
+
 void loop()
 {
   if (digitalRead(2) >= HIGH) {
@@ -175,6 +176,7 @@ void loop()
   }
   delay(1); // Wait for 1 millisecond(s)
 }
+
 
 
 
