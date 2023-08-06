@@ -129,16 +129,18 @@ void loop()
 4. Pick one-one from the available sensors and actuators and find or create code that will display the sensed data on the pc
 A) Analog potentiometer 
 Code :
-Int pot=A0;
-Void setup()
+int pot = A0;
+
+void setup()
 {
-Serial.begin(9600);
+  Serial.begin(9600);
 }
-Void loop()
+
+void loop()
 {
-  Int potvalue=analogRead(pot);
-  Serial.print(“pot value”);
-  Serial.println(potvalue);
+  int potValue = analogRead(pot);
+  Serial.print("pot value: ");
+  Serial.println(potValue);
   delay(1);
 }
 B) Reading sensor
