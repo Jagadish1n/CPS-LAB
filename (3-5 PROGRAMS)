@@ -139,7 +139,7 @@ Void loop()
   Int potvalue=analogRead(pot);
   Serial.print(“pot value”);
   Serial.println(potvalue);
-  Delay(1);
+  delay(1);
 }
 B) Reading sensor
 Code :
@@ -152,7 +152,7 @@ Void loop()
 {
    Int lightvalue=analogRead(A0);
    Serial.println(lightvalue);
-    Delay(1000);
+    delay(1000);
 }
 5.Create a program that displays data from the sensor in regular intervals in a compact format.
 CODE: 
