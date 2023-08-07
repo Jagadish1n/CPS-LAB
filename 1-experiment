@@ -1,0 +1,168 @@
+1. Study about embedded components such as sensors and actuators.
+Sensor: A sensor is an object whose purpose is to detect events or changes in its environment,
+and then provide a corresponding output. A sensor is a type of transducer; sensors may provide
+various types of output, but typically use electrical or optical signals. For example, a
+thermocouple generates a known voltage (the output) in response to its temperature (the
+environment).
+• A Sensor is used for taking Input
+• It is a transducer that converts energy from one form to another for any
+measurement or control purpose
+Ex. A Temperature sensor
+Actuator: An actuator is a component of machines that is responsible for moving or controlling
+a mechanism or system. An actuator requires a control signal and source of energy. The control
+signal is relatively low energy and may be electric voltage or current, pneumatic or hydraulic
+pressure, or even human power
+Actuator is used for output. It is a transducer that may be either mechanical or electrical which
+converts signals to corresponding physical actions.
+I/O subsystem: The I/O sub system of the embedded system facilitates the interaction of
+embedded system with the external world
+LED (Light Emitting Diode):
+LED is an important output device for visual indication in any embedded system.LED used as
+an indicator for the status of various signals or situations. LED is a p-n junction diode and
+contains a CATHODE and ANODE. For functioning the anode is connected to +ve end of power
+supply and cathode is connected to –ve end of power supply. The maximum current flowing
+through the LED is limited by connecting a RESISTOR in series between the power supply and
+LED as shown in the figure below
+There are two ways to interface an LED to a microprocessor/microcontroller:
+The Anode of LED is connected to the port pin and cathode to Ground : In this approach
+the port pin sources the current to the LED when it is at logic high(i.e. 1).
+The Cathode of LED is connected to the port pin and Anode to Vcc : Here the port pin sinks
+the current and the LED is turned ON when the port pin is at Logic low (i.e. 0)
+Segment LED display:
+• It is the most basic electronic display device that can display digits from 0-9.
+• They find wide application in devices that display numeric information like digital
+clocks,radio, microwave ovens, electronic meters etc.
+• The most common configuration has an array of eight LEDs arranged in a special
+pattern to display these digits.
+• They are laid out as a squared-off figure ‘8’. Every LED is assigned a name from 'a' to
+'h'and is identified by its name.
+• Seven LEDs 'a' to 'g' are used to display the numerals while eighth LED 'h' is used
+to display the dot/decimal.
+A seven segment is generally available in ten pin package. While eight pins correspond to the
+eight LEDs, the remaining two pins (at middle) are common and internally shorted. These
+segments come in two configurations, namely, Common cathode (CC) and Common anode (CA).
+In CC configuration, the negative terminals of all LEDs are connected to the common pins. The
+common is connected to ground and a particular LED glows when its corresponding pin is given
+high. In CA arrangement, the common pin is given a high logic and the LED pins are given low
+to display a number.
+Pin diagram:
+For common cathode configurations, the anode of each LED segment is connected to the port pins
+of
+the port to which the display is interfaced. The anode of the common anode LED display is connected
+to the SV supply voltage through a current limiting resistor and the cathodé of each LED segment is
+connected to the respective port pin lines. For an LED segment to lit in the Common anode LED
+configuration, the port pin to which the cathode of the LED segment is connected should be at logic
+0.
+7 – segment LED display is popular choice for low cost embedded applications like, public
+telephone call monitoring devices, point of scale terminals, etc..
+Optocoupler: Optocoupler is , also called photocoupler, or optical isolator, is a component that
+transfers electrical signals between two isolated circuits by using light. Optocoupler prevent high
+voltages from affecting the system receiving the signal. Commercially available opto- isolators
+withstand input-to-output voltages up to 10 kV and voltage transients with speeds up to 10 kV/μs.
+An optocoupler consists of an LED and a phototransistor in the same opaque package.
+when an electrical current is applied to the LED, infrared light is produced and passes through the
+material inside the optoisolator. The beam travels across a transparent gap and is picked up by the
+receiver, which converts the modulated light or IR back into an electrical signal. In the absence of
+light, the input and output circuits are electrically isolated from each other.
+Optocoupler is available as ICs from different semiconductor manufacturers. The MCT2M IC from
+Fairchild semiconductor is an example for optocoupler IC.
+STEPPER MOTOR
+A stepper motor 1s an electro-mechanical device which generates discrete displacement (motion) in
+response, to de electrical signals. It differs from the normal de motor in its operation. The de motor
+produces continuous rotation on applying de voltage whereas a stepper motor produces discrete
+rotation in response to the de voltage applied to it. Stepper motors are widely used in industrial
+embedded applications, consumer electronic products and robotics control systems. The feed
+mechanism of a printer/fax makes use of stepper motors for its functioning.
+Based on the coil winding arrangements, a two-phase stepper motor is classified into two. They are:
+1. Unipolar
+2. Bipolar
+1. Unipolar
+A unipolar stepper motor contains two windings per phase. The direction of rotation (clockwise
+or anticlockwise) of a stepper motor is controlled by changing the direction of current flow.
+Current in one direction flows through one coil and in the opposite direction flows through the
+other coil. It is easy to shift the direction of rotation by just switching the terminals to which the
+coils are connected.
+Figure 2.18 illustrates the working of a two-phase unipolar stepper motor.
+The coils are represented as A, B, C and D. Coils A and C carry current in opposite directions for
+phase 1 (only one of them will be carrying current one at a time)
+2.Bipolar:
+A bipolar stepper motor contains single winding per phase.For reversing the motor rotation the
+current flow through the winding is reversed dynamically. It requires complex circuitry for current
+flow reversal. The stator winding details for a two phase unipolar stepper motor is shown in Fig 2.19
+The stepping of stepper motor can be implemented in different ways by changing the sequence of
+activation of the stator windings. The different stepping modes supported by stepper motor are
+explained below.
+Full Step.
+In the full step mode both the phases are energised simultaneously. The coils A, B, C and D
+are energised in the following order:
+STEP COIL
+A
+COIL
+B
+COIL
+C
+COIL D
+1 H H L L
+2 L H H L
+3 L L H H
+4 H L L H
+It should be noted that out of the two windings, only one winding of a phase is energized at a time
+Wave Step
+In the wave step mode only one phase is energized at a time and each coils of the phase is energized
+alternatively .The coils A,B,C and D are energized in the following order
+STEP COIL
+A
+COIL
+B
+COIL
+C
+COIL D
+1 H H L L
+2 L H L L
+3 L L H L
+4 L L L H
+Half Step
+It uses the combination of wave & full step.It has the highest torque and stability. The coil
+energizing sequence for half step is given below
+STEP COIL
+A
+COIL
+B
+COIL
+C
+COIL D
+1 H L L L
+2 L H L L
+3 L H L L
+4 L H H L
+5 L L H L
+6 L L H H
+7 L L L H
+8 H L L H
+The rotation of the stepper motor can be reversed by reversing the order in which the coil is
+energized ,Two-phase unipolar stepper motors are the popular choice for embedded applications.
+The current requirement for stepper motor is little high and hence the port pins of a
+microcontroller/processor may not be able to drive them directly. Also the supply voltage required
+to operate stepper motor varies normally in the range SV o 24 V. Depending on the current and
+voltage requirements, special driving circuits are required to interface the stepper motor with
+microcontroller/processors. Commercial off-the-shelf stepper motor driver ICs are available in the
+market and they can be directly interfaced to the microcontroller port. ULN2803 is an octal
+peripheral driver array available from ON semiconductors and ST microelectronics for driving a
+SV stepper motor. Simple driving circuit can also be built using transistors.
+The following circuit diagram (Fig 2.20 ) illustrates the interfacing of a stepper motor through
+driver circuit connected to the port pins of a microcontroller/processor.
+Fig 2.20 Interfacing of a Stepper Motor
+Push Button
+Push Button Switch It is an input device. Push button switch comes in two configurations,
+namely “Push to Make’ and ‘Push to Break’. In the ‘Push to Make’ configuration, the switch is
+normally in the open state and it makes a circuit contact when it is pushed or pressed. In the ‘Push to
+Break’ con-figuration, the switch is normally in the closed state and it breaks the circuit contact when
+it is pushed or pressed. The push button stays in the ‘closed’ (For Push to Make type) or ‘open’ (For
+Push to Breaktype) state as long as it is kept in the pushed state and it breaks/makes the circuit
+connection when it is released. Push button is used for generating a mo-mentary pulse. In embedded
+application push button is generally used as reset and start switch and pulse |generator. The Push button
+is normally connected to the port pin of the host processor/controller. Depend- port pin Port pin,on the
+way in which the push button interfaced to the controller, it can generate either a ‘HIGH’ pulse or
+‘LOW’ pulse. Figure 2.23 illustrates how the pushbutton can be used for generating “LOW” and
+‘HIGH’pulses.
+Fig 2.23 PushButton LOW and HIGH pulse
