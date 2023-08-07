@@ -1,0 +1,157 @@
+EXERCISE 2
+Study about Industrial Revolution and Cyber physical system opportunities
+and challenges.
+A cyber-physical system (CPS) or intelligent system is a computer
+system in which a mechanism is controlled or monitored by computerbased algorithms. In cyber-physical systems, physical and software components
+are deeply intertwined, able to operate on different spatial and temporal scales,
+exhibit multiple and distinct behavioral modalities, and interact with each other in
+ways that change with context.CPS involves transdisciplinary approaches, merging
+theory of cybernetics, mechatronics, design and process science. The process
+control is often referred to as embedded systems. In embedded systems, the
+emphasis tends to be more on the computational elements, and less on an intense
+link between the computational and physical elements. CPS is also similar to
+the Internet of Things (IoT), sharing the same basic architecture; nevertheless, CPS
+presents a higher combination and coordination between physical and
+computational elements.
+Examples of CPS include smart grid, autonomous
+automobile systems, medical monitoring, industrial control
+systems, robotics systems, and automatic pilot avionics.Precursors of cyberphysical systems can be found in areas as diverse
+as aerospace, automotive, chemical processes, civil infrastructure,
+energy, healthcare, manufacturing, transportation, entertainment, and consumer
+appliances.
+INDUSTRY 4.0
+Industry 4.0 refers to the fourth industrial revolution, although it is concerned with
+areas that are not usually classified as industry applications in their own right, such
+as smart cities
+Fourth Industrial Revolution
+The first industrial revolution came with the advent of mechanisation, steam power
+and water power.This was followed by the second industrial revolution, which
+revolved around mass production and assembly lines using electricity.The third
+industrial revolution came with electronics, I.T. systems and automation, which led
+to the fourth industrial revolution that is associated with cyber physical systems.
+Figure 1: Industry 4.0
+Industry 4.0 Technologies
+Generally-speaking, Industry 4.0 describes the growing trend towards automation
+and data exchange in technology and processes within the manufacturing industry,
+including:
+ The internet of things (IoT)
+ The industrial internet of things (IIoT)
+ Cyber-physical systems (CPS)
+ Smart manufacture
+ Smart factories
+ Cloud computing
+ Cognitive computing
+ Artificial intelligence
+This automation creates a manufacturing system whereby machines in factories are
+augmented with wireless connectivity and sensors to monitor and visualise an
+entire production process and make autonomous decisions.
+Wireless connectivity and the augmentation of machines will be greatly advanced
+with the full roll out of 5G. This will provide faster response times, allowing for
+near real time communication between systems.
+The fourth industrial revolution also relates to digital twin technologies. These
+digital technologies can create virtual versions of real-world installations,
+processes and applications. These can then be robustly tested to make costeffective decentralised decisions.
+These virtual copies can then be created in the real world and linked, via the
+internet of things, allowing for cyber-physical systems to communicate and
+cooperate with each other and human staff to create a joined up real time data
+exchange and automation process for Industry 4.0 manufacturing.
+This automation includes interconnectivity between processes, information
+transparency and technical assistance for decentralised decisions.
+In short, this should allow for digital transformation. This will allow for automated
+and autonomous manufacturing with joined-up systems that can cooperate with
+each other.
+The technology will help solve problems and track processes, while also increasing
+productivity.
+Example of the Industry 4.0 Revolution
+Industry 4.0 has already been demonstrated through business models such as
+offline programming and adaptive control for arc welding, taking the process from
+product design through simulation and onto the shop floor for production.
+There are also examples of businesses implementing Industry 4.0 in automotive
+manufacture and a variety of smart factories across the world.
+Figure 2: Industry 4.0 Revolution
+A challenge in the development of embedded and cyber-physical systems is the
+large differences in the design practice between the various engineering disciplines
+involved, such as software and mechanical engineering. Additionally, as of today
+there is no "language" in terms of design practice that is common to all the
+involved disciplines in CPS. Today, in a marketplace where rapid innovation is
+assumed to be essential, engineers from all disciplines need to be able to explore
+system designs collaboratively, allocating responsibilities to software and physical
+elements, and analyzing trade-offs between them. Recent advances show that
+coupling disciplines by using co-simulation will allow disciplines to cooperate
+without enforcing new tools or design methods. Results from the MODELISAR
+project show that this approach is viable by proposing a new standard for cosimulation in the form of the Functional Mock-up Interface.
+CYBER PHYSICAL SYSTEM OPPORTUNITIES
+The science of CPS has the capability to impact technology in a wide
+variety of industries and organizations, and CPS allows us to imagine, create,
+develop, refine and perpetuate smart systems in fields that result in the betterment
+of industries, communities and individuals.
+Regarding the benefits of cyber-physical systems technology, according to
+the Information Technology Laboratory: “The ability to design and build
+successful cyber-physical systems will address many national priorities in ways
+that traditional computer science cannot in areas as diverse as aerospace,
+automotive, energy, disaster response, health care, manufacturing and city
+management. Standards, protocols and test methods that support the discovery,
+interoperability and composition of components used to build these cyber physical
+systems will promote innovation, improve economic viability at the same time
+allowing systems to become more efficient and reduce resource-use.”
+In other words, the immeasurable benefits of cyber-physical systems is the
+acceleration of technological progress — progress that positively impacts countless
+fields, organizations and ultimately, the lives of others.
+Here are just a few ways in which the benefits of CPS technology have impacted
+different industries:
+Smart city management
+TechTarget defines a smart city as “a municipality that uses information and
+communication technologies to increase operational efficiency, share information
+with the public and improve both the quality of government services and citizen
+welfare.” A smart city ecosystem is complex, including systems related to
+intelligent traffic management, emergency response technologies and public safety
+solutions — the use of cyber-physical systems technology is paramount in
+planning, implementing and improving the optimization of smart cities.
+Infrastructure
+In 2021, the United States’ infrastructure received a C- rating from
+the American Society of Civil Engineers’ Report Card for America’s
+Infrastructure.
+What is the solution to our unstable infrastructure? Improving infrastructure
+starts with technology. Using advanced digital technologies like IoT sensors and
+video cameras, smart infrastructure empower smart cities to enhance the
+experience of citizens, businesses and city operators.
+CPS engineers must master cutting-edge technologies in order to upgrade
+existing city infrastructure systems — many of which have not been updated in
+years. Bringing novel technologies to physical frameworks allows for more
+upgrades to critical infrastructure.
+Automotive
+IoT and CPS technology have made specific advancements in smart car
+technologies that can make vehicle transportation safer; “blind-spot monitoring,
+lane-departure warning and forward collision warning” are just three features that,
+if implemented in all cars in the United States, could reduce the number of crashes
+and in turn, save millions of dollars a year.
+Agriculture
+Sometimes referred to as smart agriculture or digital farming, CPS-related
+technology has resulted in advancements that help drive efficiencies on farms:
+from drones and satellites that relay images related to plant health to smart sensors
+on tractors or harvesters that provide information on soil type and condition.
+Sustainability
+Society continues to seek more solutions to today’s overwhelming need for
+sustainable practices in business, health care and countless other industries, and
+CPS technology often makes the advancement of these solutions possible —
+solutions such as public electric transport, affordable energy storage, accessible
+solar power and clean recycling initiatives are a direct result of IoT and CPS
+technology.
+Security
+The emergence of smart technology has increased security measures in a
+variety of ways. “From mobile app development for real-time remote monitoring
+to fully fledged intelligent surveillance systems,” CPS technology has empowered
+smart security to advance and improve.
+Health care
+CPS technology has made a multitude of medical advancements possible.
+From a smart monitoring system that tracks cancer patients’ response to treatment
+to a smart continuous tool that sends data on glucose levels to the wearer’s
+smartphone, the field of health care has greatly improved as a result of CPS science
+and technology.
+Challenges and risks in Cyber-Physical Systems related to Industry 4.0 are:
+ Data protection and data security.
+ Lack of benefit quantification.
+ Lack of prioritization by top management.
+ Industrial broadband structure.
+ Industrial espionage/sabotage.
+ Production outages due to non availability of data.
