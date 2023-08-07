@@ -1,0 +1,59 @@
+Aim:
+To study the MQTT Protocol and examine the components of MQTT protocol.
+Introduction:
+MQTT stands for Message Queuing Telemetry Transport. It is an extremely lightweight
+and publish-subscribe messaging transport protocol. This protocol is useful for the connection
+with the remote location where the bandwidth is a premium. It is a publish and subscribe
+system where we can publish and receive the messages as a client. It makes it easy for
+communication between multiple devices. It is a simple messaging protocol designed for the
+constrained devices and with low bandwidth, so it's a perfect solution for the internet of
+things applications.
+Characteristics of MQTT
+o It is a machine-to-machine protocol, i.e., it provides communication between the
+devices.
+o It is designed as a simple and lightweight messaging protocol that uses a
+publish/subscribe system to exchange the information between the client and the
+server.
+o It does not require that both the client and the server establish a connection at the
+same time.
+o It provides faster data transmission, like how WhatsApp/messenger provides a faster
+delivery. It's a real-time messaging protocol.
+o It allows the clients to subscribe to the narrow selection of topics so that they can
+receive the information they are looking for.
+Components of MQTT
+o Message
+o Client
+o Server or Broker
+o TOPIC
+Message
+The message is the data that is carried out by the protocol across the network for the
+application. When the message is transmitted over the network, then the message contains the
+following parameters:
+1. Payload data
+2. Quality of Service (QoS)
+3. Collection of Properties
+4. Topic Name
+Client
+In MQTT, the subscriber and publisher are the two roles of a client. The clients subscribe to
+the topics to publish and receive messages.
+Publish: When the client sends the data to the server, then we call this operation as a publish.
+Subscribe: When the client receives the data from the server, then we call this operation a
+subscription.
+Server
+The device or a program that allows the client to publish the messages and subscribe to the
+messages. A server accepts the network connection from the client, accepts the messages
+from the client, processes the subscribe and unsubscribe requests, forwards the application
+messages to the client, and closes the network connection from the client.
+TOPIC
+The label provided to the message is checked against the subscription known by the server is
+known as TOPIC.
+MQTT Message Format
+The MQTT uses the command and the command acknowledgment format, which means that
+each command has an associated acknowledgment.
+MQTT Packet Structure
+The MQTT message format consists of 2 bytes fixed header, which is present in all the
+MQTT packets. The second field is a variable header, which is not always present. The third
+field is a payload, which is also not always present. The payload field basically contains the
+data which is being sent.
+Conclusion:
+Thus,MQTT protocol and its components are studied and examined.
